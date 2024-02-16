@@ -1,9 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-const hour =
-  `${new Date(Date.now()).getHours()}` +
-  ":" +
-  `${new Date(Date.now()).getMinutes()}`;
+const currentHour = new Date().getHours().toString().padStart(2, "0");
+const currentMinutes = new Date().getMinutes().toString().padStart(2, "0");
+
+const currentTime = `${currentHour}:${currentMinutes}`;
+console.log(currentTime);
 const dayOrNight = new Date(Date.now()).getHours() > 12 ? "PM" : "AM";
 ---
 
@@ -88,7 +89,7 @@ const dayOrNight = new Date(Date.now()).getHours() > 12 ? "PM" : "AM";
           class="flex gap-2 p-2 border-2 border-b-[6px] border-black font-bold rounded-xl"
         >
           <p class="text-yellow-500">Colombia</p>
-          <p class="font-extrabold">{hour} {dayOrNight}</p>
+          <p class="font-extrabold">{currentTime} {dayOrNight}</p>
         </article>
       </div>
     </header>
