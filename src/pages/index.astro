@@ -1,11 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-const currentHour = new Date().getHours().toString().padStart(2, "0");
-const currentMinutes = new Date().getMinutes().toString().padStart(2, "0");
-
-const currentTime = `${currentHour}:${currentMinutes}`;
-console.log(currentTime);
-const dayOrNight = new Date(Date.now()).getHours() > 12 ? "PM" : "AM";
 ---
 
 <Layout title="cesardev">
@@ -89,7 +83,6 @@ const dayOrNight = new Date(Date.now()).getHours() > 12 ? "PM" : "AM";
           class="flex gap-2 p-2 border-2 border-b-[6px] border-black font-bold rounded-xl"
         >
           <p class="text-yellow-500">Colombia</p>
-          <p class="font-extrabold">{currentTime} {dayOrNight}</p>
         </article>
       </div>
     </header>
@@ -105,9 +98,9 @@ const dayOrNight = new Date(Date.now()).getHours() > 12 ? "PM" : "AM";
       <h4 class="font-bold text-xl mt-6">My Projects</h4>
       <div class="flex justify-center sm:justify-start flex-wrap gap-4">
         <article
-          class="flex flex-col w-[270px] border-slate-200 border rounded-xl p-5 gap-5 mt-4 hover:shadow-blue-500 hover:shadow-md"
+          class="flex flex-col w-fit border-slate-200 border rounded-xl p-5 gap-5 mt-4 hover:shadow-blue-500 hover:shadow-md"
         >
-          <img src="/cv-maker.png" alt="cv" class="rounded-xl" />
+          <img src="/swordly.png" alt="cv" class="rounded-xl" />
           <div class="flex">
             <div class="flex flex-col gap-2 mr-auto">
               <div>
@@ -136,7 +129,7 @@ const dayOrNight = new Date(Date.now()).getHours() > 12 ? "PM" : "AM";
 
             <footer class="flex self-start pt-2 gap-3">
               <a
-                href="https://swordly-production.up.railway.app/"
+                href="https://swordlyfront-production.up.railway.app/"
                 target="_blank"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +169,7 @@ const dayOrNight = new Date(Date.now()).getHours() > 12 ? "PM" : "AM";
           </div>
         </article>
         <article
-          class="flex flex-col w-[270px] border-slate-200 border rounded-xl p-5 gap-5 mt-4 hover:shadow-blue-500 hover:shadow-md"
+          class="flex w-fit flex-col border-slate-200 border rounded-xl p-5 gap-5 mt-4 hover:shadow-blue-500 hover:shadow-md"
         >
           <img src="/cv-maker.png" alt="cv" class="rounded-xl" />
           <div class="flex">
@@ -237,7 +230,7 @@ const dayOrNight = new Date(Date.now()).getHours() > 12 ? "PM" : "AM";
           </div>
         </article>
         <article
-          class="flex flex-col w-[270px] border-slate-200 border rounded-xl p-5 gap-5 mt-4 hover:shadow-blue-500 hover:shadow-md"
+          class="flex w-fit flex-col border-slate-200 border rounded-xl p-5 gap-5 mt-4 hover:shadow-blue-500 hover:shadow-md"
         >
           <img src="/umoob.png" alt="umoob" class="rounded-xl" />
           <div class="flex">
@@ -283,7 +276,7 @@ const dayOrNight = new Date(Date.now()).getHours() > 12 ? "PM" : "AM";
           </div>
         </article>
         <article
-          class="flex flex-col w-[270px] border-slate-200 border rounded-xl p-5 gap-5 mt-4 hover:shadow-blue-500 hover:shadow-md"
+          class="flex w-fit flex-col border-slate-200 border rounded-xl p-5 gap-5 mt-4 hover:shadow-blue-500 hover:shadow-md"
         >
           <img src="/game-pricing.png" alt="game" class="rounded-xl" />
           <div class="flex">
